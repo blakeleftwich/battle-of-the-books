@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>NC Battle of the Books</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Book List Section -->
+  <div id="book-list">
+    <h1>2024-2025<br>Elementary Battle of the Books</h1>
+    <ul id="books"></ul>
+    <!-- Moved footer text above the Take Quiz button -->
+    <p class="book-list-footer">
+      &nbsp;&nbsp;*Student choice selection<br>
+      **Jack and the Geniuses-Book 1
+    </p>
+    <button id="take-quiz">Take Quiz</button>
+  </div>
+
+  <!-- Quiz Section (Hidden by default) -->
+  <div id="quiz-container">
+    <div id="quiz-question"></div>
+    <div id="answer-section">
+      <select id="title-select"></select>
+      <select id="author-select"></select>
+    </div>
+    <button id="submit-answer">Submit Answer</button>
+    <div id="feedback"></div>
+    <button id="next-question">Next Question</button>
+    <button id="back-to-booklist">Back to Book List</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
